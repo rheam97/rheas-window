@@ -12,7 +12,17 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero': "url('../public/banner.jpeg')",
       },
+      container: {
+        center: true,
+      },
+      dropShadow: {
+        '4xl': [
+            '0 0px 5px rgba(0, 0, 0, 0)',
+            '5px 5px 15px black'
+        ]
+      }
     },
   },
   plugins: [],
