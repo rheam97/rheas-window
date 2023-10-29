@@ -22,7 +22,13 @@ const config: Config = {
             '0 0px 5px rgba(0, 0, 0, 0)',
             '5px 5px 15px black'
         ]
-      }
+      },
+      padding: {
+        '1/2': '50%',
+        '65': '65%',
+        full: '100%',
+        over: '130%',
+      },
     },
   },
   plugins: [],
