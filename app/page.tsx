@@ -54,19 +54,19 @@ function StainedGlass(){
 
     return (
       <div className="grid h-screen md:grid-cols-4 grid-cols-3 bg-gradient-to-b from-cyan-500 via-pink-300 to-orange-500">
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-white via-slate-50 to-transparent md:h-1/3 h-1/4 md:pb-65 pb-over glass'>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-white via-slate-50 to-transparent md:h-1/3 h-1/4 md:pb-66 pb-over glass'>
       </div>
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-red-400 md:h-1/3 h-1/4 md:pb-65 pb-over glass'></div>
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-yellow-400 md:h-1/3 h-1/4 md:pb-65 pb-over glass'></div>
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-green-400 md:h-1/3 h-1/4 md:pb-65 pb-over glass'></div>
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-cyan-400 md:h-1/3 h-1/4 md:pb-65 pb-over glass'></div>
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-purple-400 md:h-1/3 h-1/4 md:pb-65 pb-over glass'></div>
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-white via-slate-50 to-transparent md:h-1/3 h-1/4 md:pb-65 pb-over glass'></div>
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-red-400 md:h-1/3 h-1/4 md:pb-65 pb-over glass'></div>
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-yellow-400 md:h-1/3 h-1/4 md:pb-65 pb-over glass'></div>
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-green-400 md:h-1/3 h-1/4 md:pb-65 pb-over glass'></div>
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-cyan-400 md:h-1/3 h-1/4 md:pb-65 pb-over glass'></div>
-      <div className='border-solid border-4 border-black bg-gradient-to-b from-purple-400 md:h-1/3 h-1/4 md:pb-65 pb-over glass'></div>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-red-400 md:h-1/3 h-1/4 md:pb-66 pb-over glass'></div>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-yellow-400 md:h-1/3 h-1/4 md:pb-66 pb-over glass'></div>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-green-400 md:h-1/3 h-1/4 md:pb-66 pb-over glass'></div>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-cyan-400 md:h-1/3 h-1/4 md:pb-66 pb-over glass'></div>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-purple-400 md:h-1/3 h-1/4 md:pb-66 pb-over glass'></div>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-white via-slate-50 to-transparent md:h-1/3 h-1/4 md:pb-66 pb-over glass'></div>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-red-400 md:h-1/3 h-1/4 md:pb-66 pb-over glass'></div>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-yellow-400 md:h-1/3 h-1/4 md:pb-66 pb-over glass'></div>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-green-400 md:h-1/3 h-1/4 md:pb-66 pb-over glass'></div>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-cyan-400 md:h-1/3 h-1/4 md:pb-66 pb-over glass'></div>
+      <div className='border-solid border-4 border-black bg-gradient-to-b from-purple-400 md:h-1/3 h-1/4 md:pb-66 pb-over glass'></div>
       </div>
     )
 
