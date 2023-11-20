@@ -6,7 +6,7 @@ import React from 'react'
 
 function Banner() {
   return (
-    <div className="container h-[calc(100svh-118px)] grid grid-cols-3 grid-rows-2 bg-hero max-w-full bg-cover">
+    <div className="container h-[calc(100svh-138px)] grid grid-cols-3 grid-rows-2 bg-hero max-w-full bg-cover">
     <div className="grid grid-cols-1 grid-rows-2 h-1/2 pb-[57%] border-indigo-600 border-2" >
       <div className='pb-[30%] border-indigo-600 border-2'>Hi, My name is Rhea Malviya</div>
       <div className='pb-[10%] border-indigo-600 border-2'></div>
@@ -36,7 +36,7 @@ function Banner() {
 function Tile (props){
 
   return (
-    <div className={`border-solid border-4 border-black bg-gradient-to-b ${props.color} to-transparent lg:min-h-[27rem] md:min-h-[15rem] min-h-[9rem] glass`}><p>hello</p>
+    <div className={`border-solid border-4 border-black bg-gradient-to-b ${props.color} to-transparent 2xl:min-h-[27rem] md:min-h-[15rem] min-h-[9rem] glass`}><p>hello</p>
     </div>
   )
 }
@@ -67,7 +67,7 @@ function StainedGlass(){
 function Menu(){
   return (
     <header className='bg-black flex w-full justify-center sticky'>
-      <nav className='flex items-center w-full justify-between pb-6 top-5 text-center'>
+      <nav className='flex items-center w-full justify-between pb-4 top-5 text-center'>
         <ul className='text-white flex justify-between items-center w-full px-3'>
           <li>
             ABOUT
