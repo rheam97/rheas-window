@@ -22,7 +22,7 @@ function Banner() {
 /**
  * Tiles:
  * have an array of square components
- * assign random color out of 10 to each component
+ * assign random color oulgt of 10 to each component
  * each component has hover property that will lighten on hover
  * assign property at random as well
  *  - this property will reveal information on hover
@@ -72,7 +72,7 @@ function Menu(){
           <li>
             ABOUT
           </li>
-          <li>
+          <li>lg
             PROJECTS
           </li>
           <li>
