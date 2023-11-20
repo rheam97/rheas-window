@@ -23,12 +23,21 @@ const config: Config = {
             '5px 5px 15px black'
         ]
       },
-      padding: {
-        '1/2': '50%',
-        '66': '66%',
-        full: '100%',
-        over: '130%',
+      height: {
+        'screen': '100svh',
       },
+      padding: {
+        '67': '67px',
+        '1/2': '50%',
+        '73': '75%',
+        full: '100%',
+        over: '149%',
+      },
+      borderWidth :{
+        '70':  '70px',
+        '50': '50px',
+        '100': '100px',
+      }
     },
   },
   plugins: [],
