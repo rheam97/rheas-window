@@ -1,12 +1,14 @@
+"use client"
+
 import Image from 'next/image'
 import { Container } from 'postcss'
 import React from 'react'
-
+import { useState } from 'react'
 
 
 function Banner() {
   return (
-    <div className="container h-[calc(100svh-138px)] grid grid-cols-3 grid-rows-2 bg-hero max-w-full bg-cover">
+    <div id='about' className="container h-[calc(100svh-158px)] grid grid-cols-3 grid-rows-2 bg-hero max-w-full bg-cover">
     <div className="grid grid-cols-1 grid-rows-2 h-1/2 pb-[57%] border-indigo-600 border-2" >
       <div className='pb-[30%] border-indigo-600 border-2'>Hi, My name is Rhea Malviya</div>
       <div className='pb-[10%] border-indigo-600 border-2'></div>
@@ -33,31 +35,53 @@ function Banner() {
  * 
  */
 
-function Tile (props){
 
-  return (
-    <div className={`border-solid border-4 border-black bg-gradient-to-b ${props.color} to-transparent 2xl:min-h-[27rem] md:min-h-[15rem] min-h-[9rem] glass`}><p>hello</p>
-    </div>
-  )
-}
 
 
 function StainedGlass(){
 
+
+  const [isHovering, setIsHovered] = useState(false);
+  const onMouseEnterHandler = () => setIsHovered(true);
+  const onMouseLeaveHandler = () => setIsHovered(false);
+
+
+  function Tile (props:any){
+
     return (
-      <div className="grid h-full md:grid-cols-4 grid-cols-3 bg-gradient-to-b from-cyan-500 via-pink-300 to-orange-500 md:border-t-100 border-t-70 border-black" >
-      <Tile color='from-white via-slate-50' />
-      <Tile color='from-red-400'/>
-      <Tile color='from-yellow-400'/>
-      <Tile color='from-green-400'/>
-      <Tile color='from-cyan-400'/>
-      <Tile color='from-purple-400'/>
-      <Tile color='from-white via-slate-50'/>
-      <Tile color='from-red-400'/>
-      <Tile color='from-yellow-400'/>
-      <Tile color='from-yellow-400'/>
-      <Tile color='from-green-400'/>
-      <Tile color='from-cyan-400'/> 
+      <div className={`border-solid border-4 border-black ${isHovering ?  `deblur`: `bg-gradient-to-b ${props.color} to-transparent glass`} lg:max-2xl:min-h-[16rem] 2xl:min-h-[27rem] min-h-[9rem]`}>
+      </div>
+    )
+  }
+
+
+
+    return (
+      <div id='projects' className="grid h-full md:grid-cols-4 grid-cols-3 bg-gradient-to-b from-cyan-500 via-pink-300 to-orange-500 md:border-t-100 border-t-70 border-black" >
+      <Tile color='from-white via-slate-50'  onMouseENter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler} />
+      <Tile color='from-red-400'  onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}/>
+      <Tile color='from-yellow-400'  onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}/>
+      <Tile color='from-green-400'  onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}/>
+      <Tile color='from-cyan-400'  onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}/>
+      <Tile color='from-purple-400'  onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}/>
+      <Tile color='from-white via-slate-50'  onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}/>
+      <Tile color='from-red-400'  onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}/>
+      <Tile color='drom-purple-400'  onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}/>
+      <Tile color='from-yellow-400'  onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}/>
+      <Tile color='from-green-400'  onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}/>
+      <Tile color='from-cyan-400'  onMouseEnter={onMouseEnterHandler}
+      onMouseLeave={onMouseLeaveHandler}/> 
       </div>
     )
 
@@ -70,16 +94,24 @@ function Menu(){
       <nav className='flex items-center w-full justify-between pb-4 top-5 text-center'>
         <ul className='text-white flex justify-between items-center w-full px-3'>
           <li>
+            <a href='#about'>
             ABOUT
+            </a>
           </li>
-          <li>lg
+          <li>
+            <a href='#projects'>
             PROJECTS
+            </a>
           </li>
           <li>
+            <a>
             RESUME
+            </a>
           </li>
           <li>
+            <a href='mailto:rheam97@gmail.com'>
             CONTACT
+            </a>
           </li>
         </ul>
       </nav>
