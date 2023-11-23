@@ -10,15 +10,14 @@ import { useState } from 'react'
 function Banner() {
   return (
     <div id='about' className="container h-[calc(100svh-158px)] grid grid-cols-3 grid-rows-2 bg-hero max-w-full bg-cover">
-    <div className="grid grid-cols-1 grid-rows-2 min-h-1/2 border-indigo-600 border-2" >
-      <div className='pb-[30%] border-indigo-600 border-2'>Hi, My name is Rhea Malviya</div>
-      <div className='pb-[10%] border-indigo-600 border-2'></div>
+    <div className="min-h-1/2 border-indigo-600 border-2 flex items-end hover:bg-black hover:text-white active:bg-black active:text-white transition-colors duration-600 ease-out" >
+      My name is Rhea Malviya
     </div>
-    <div className="min-h-1/2 border-indigo-600 border-2"></div>
-    <div className="h-1/2 pb-[57%] border-indigo-600 border-2">I found it difficult to design a brand around myself for this website.</div>
-    <div className="h-1/2 pb-[57%] border-indigo-600 border-2">I'm a Software Developer based in Brooklyn, NY.</div>
-    <div className="h-1/2 pb-[57%] border-indigo-600 border-2"></div>
-    <div className="h-1/2 pb-[57%] border-indigo-600 border-2"></div>
+    <div className=" min-h-1/2 border-indigo-600 border-2"></div>
+    <div className=" min-h-1/2 border-indigo-600 border-2 flex items-center hover:bg-black hover:text-white active:bg-black active:text-white transition-colors duration-600 ease-out">I found it difficult to design a brand around myself for this website.</div>
+    <div className=" min-h-1/2 border-indigo-600 border-2 flex justify-items-end items-center hover:bg-black hover:text-white active:bg-black active:text-white transition-colors duration-600 ease-out">I'm a Software Developer based in Brooklyn, NY.</div>
+    <div className=" min-h-1/2 border-indigo-600 border-2 hover:bg-black hover:text-white active:bg-black active:text-white transition-colors duration-600 ease-out overflow-y-auto"> I created this website to get excited about coding again after getting bogged down in the tech rat-race.</div>
+    <div className=" min-h-1/2 border-indigo-600 border-2 flex items-center justify-start  hover:bg-black hover:text-white active:bg-black active:text-white transition-colors duration-600 ease-out">Luckily, it worked :) I'm looking forward to adding more projects in the grid below</div>
   </div>
   )
 }
