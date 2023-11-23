@@ -24,20 +24,21 @@ function Banner() {
 }
 
 
+
+
 function Tile (props:any){
+  const [show, setShow] = React.useState(false);
 
-  function modalOpen(){
-    if(props.project){
-      
-    }
-
-    return
-  }
 
   return (
-    <div className={`border-solid border-4 border-black bg-gradient-to-b ${props.color} to-transparent rounded-2xl blur-sm lg:max-2xl:min-h-[16rem] 2xl:min-h-[27rem] min-h-[9rem] ${props.project ? `${props.project} bg-cover hover:filter-none active:filter-none` : `hover:filter-none active:filter-none`} transition-filter ease-in-out duration-700`}>
-      {props.project ? <ProjectModal title={props.title} github={props.github} deployed={props.deployed}/> : null}
+    <>
+    <div onClick={()=>setShow(true)} className={`border-solid border-4 relative border-black bg-gradient-to-b ${props.color} to-transparent rounded-2xl blur-sm lg:max-2xl:min-h-[16rem] 2xl:min-h-[27rem] min-h-[9rem] ${props.project ? `${props.project} bg-cover hover:filter-none active:filter-none` : `hover:filter-none active:filter-none`} transition-filter ease-in-out duration-700`}>
+    {props.project ? <ProjectModal show={show} title={props.title} github={props.github} deployed={props.deployed}/> : null }
+    {/* {props.project ? <div className={`absolute bg-opacity-0 top-0 left 0`}></div> : null} */}
     </div>
+
+    </>
+
   )
 }
 
@@ -46,19 +47,21 @@ function Tile (props:any){
 
 function ProjectModal(props:any) {
   const [showModal, setShowModal] = React.useState(false);
+
+  
   return (
     <>
-      <button
-        className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+     <button
+        className="bg-white border-black border-3 text-black active:border-blue font-bold  absolute right-0 text-md px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none  ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
-      >
-        Open regular modal
+      >O
       </button>
+   
       {showModal ? (
         <>
           <div
-            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+            className="justify-center w-30 h-30 items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
           >
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               {/*content*/}
@@ -80,7 +83,7 @@ function ProjectModal(props:any) {
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
                   <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
-                   {props.github} {props.deployed}
+                   <a href={props.github} target='_clear' className='underline'>Github</a> {props.deployed}
                   </p>
                 </div>
                 {/*footer*/}
@@ -91,13 +94,6 @@ function ProjectModal(props:any) {
                     onClick={() => setShowModal(false)}
                   >
                     Close
-                  </button>
-                  <button
-                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Save Changes
                   </button>
                 </div>
               </div>
@@ -111,14 +107,7 @@ function ProjectModal(props:any) {
 }
 
 
-function StainedGlass(){
-
-
-  let project1 = ''
-
-  let project2 = ''
-
-  
+function StainedGlass(){  
 
     return (
       <div id='projects' className="grid h-full md:grid-cols-4 grid-cols-3 bg-gradient-to-b from-cyan-500 via-pink-300 to-orange-500 md:border-t-100 border-t-70 border-black" >
@@ -127,8 +116,8 @@ function StainedGlass(){
       <Tile color='from-yellow-400' />
       <Tile color='from-green-400' />
       <Tile color='from-cyan-400' />
-      <Tile color='from-purple-400' project='bg-rf' title='Restroom Finder' github='' deployed=''/>
-      <Tile color='from-white via-slate-50' project='bg-ss' title='Silver Socials' github='' deployed=''/>
+      <Tile color='from-purple-400' project='bg-rf' title='Restroom Finder' github='https://github.com/rheam97/restroom-finder' deployed=''/>
+      <Tile color='from-white via-slate-50' project='bg-ss' title='Silver Socials' github='https://github.com/rheam97/silver-socials' deployed=''/>
       <Tile color='from-red-400' />
       <Tile color='from-purple-400' />
       <Tile color='from-yellow-400' />
