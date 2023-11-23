@@ -144,7 +144,7 @@ function Menu(){
             </a>
           </li>
           <li>
-            <a>
+            <a href='https://docs.google.com/document/d/18gEzXdmxVdJ4RKUgJ4ISjOk35JanS2kK-gfroLa5oWY/edit?usp=sharing' target="_clear">
             RESUME
             </a>
           </li>
