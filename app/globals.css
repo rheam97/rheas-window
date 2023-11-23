@@ -12,9 +12,10 @@ backdrop-filter: blur(9.4px);
   }
 
   .deblur {
+    box-shadow: none;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    background-color: white;
+    background-color: transparent;
   }
 
 

@@ -13,6 +13,8 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero': "url('../public/banner.jpeg')",
+        'rf': "url('../public/restroomfinder.png')",
+        'ss': "url('../public/silversocials.png')"
       },
       container: {
         center: true,
@@ -37,6 +39,9 @@ const config: Config = {
         '70':  '70px',
         '50': '50px',
         '100': '100px',
+      },
+      transitionProperty: {
+        'filter': 'filter'
       }
     },
   },
