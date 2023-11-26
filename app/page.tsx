@@ -129,10 +129,22 @@ function StainedGlass(){
 
 
 function Menu(){
+
+  const [toggle, toggleOpen] = React.useState(false)
+
+  const toggler = () => {
+    toggleOpen(!toggle)
+  }
+
   return (
     <header className='bg-black flex w-full justify-center sticky'>
-      <nav className='flex items-center w-full justify-between pb-4 top-5 text-center'>
-        <ul className='text-white flex justify-between items-center w-full px-3'>
+      <nav className='flex items-center w-full justify-between pb-4 top-5 text-center' onClick={toggler}>
+        <div className='hamburger sm:hidden'>
+          <div className='burger'></div>
+          <div className='burger'></div>
+          <div className='burger'></div>
+        </div>
+        <ul className={`text-white sm:flex ${toggle ? `flex flex-col justify-around transition ease-linear duration-400 items-center w-1/2 h-[100svh] absolute bg-black mt-[500px] pt-[100px] `: ` hidden justify-between items-center w-full px-3` }`}>
           <li>
             <a href='#about'>
             ABOUT
