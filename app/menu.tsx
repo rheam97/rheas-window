@@ -11,15 +11,16 @@ function Menu() {
   
     return (
       <header className="bg-black flex w-full justify-center sticky">
-        <nav className="flex items-center w-full justify-between pb-4 top-5 text-center">
+        <nav className="flex items-center w-full justify-between pb-4 text-center">
           <div className="hamburger sm:hidden" onClick={toggler}>
+            {/* /**change to single symbol that transitions */ }
             <div className="burger"></div>
             <div className="burger"></div>
             <div className="burger"></div>
           </div>
           {/* {toggle ? (
-          <ul className='grid grid-rows-4 bg-black space-y-1'>
-          <li className=''>
+          <ul className='flex flex-col justify-between mt-3 bg-black'>
+          <li>
               <a href='#about'>
               ABOUT
               </a>
@@ -48,15 +49,15 @@ function Menu() {
           <ul
             className={`text-white sm:flex ${
               toggle
-                ? `flex flex-col justify-around transition ease-linear duration-400 items-center w-1/2 h-[100svh] absolute bg-black mt-[500px] pt-[100px] `
-                : ` hidden justify-between items-center w-full px-3`
+                ? `flex flex-col h-screen w-1/2 absolute transition ease-in-out duration-800 items-center bg-black top-5`
+                : `hidden justify-between items-center w-full px-3`
             }`}
           >
             <li>
               <a href="/about">ABOUT</a>
             </li>
             <li>
-              <a href="/">PROJECTS</a>
+              <a href="/projects">PROJECTS</a>
             </li>
             <li>
               <a href="#blog">BLOG</a>

@@ -7,7 +7,18 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    
     extend: {
+      animation: {
+        typewriter: "typewriter 40s steps(11, end) forwards",
+      },
+      keyframes: {
+        typewriter: {
+          to: {
+            right: '100%'
+          }
+      }
+    },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -42,7 +53,9 @@ const config: Config = {
       },
       transitionProperty: {
         'filter': 'filter'
-      }
+      },
+      
+
     },
   },
   plugins: [],

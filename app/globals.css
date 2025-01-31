@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
-    z-index: 10;
+    z-index: 99;
     }
 
     .burger {
@@ -55,12 +55,3 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}

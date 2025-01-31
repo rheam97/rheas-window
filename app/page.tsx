@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Menu from "./menu";
-import StainedGlass from "./StainedGlass";
+import Title from "./title";
 import { Container } from "postcss";
 import React from "react";
 import { useState } from "react";
@@ -36,12 +35,7 @@ import { useState } from "react";
 
 export default function Home() {
   return (
-    <body className="h-screen">
-      <main className="h-full max-w-screen container md:border-70 border-50 border-black">
-        <Menu />
-        <StainedGlass />
-      </main>
-    </body>
+   <Title/>
   );
 }
 
