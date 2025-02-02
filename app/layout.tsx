@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Uncial_Antiqua } from 'next/font/google'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -16,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )

@@ -10,14 +10,32 @@ const config: Config = {
     
     extend: {
       animation: {
-        typewriter: "typewriter 40s steps(11, end) forwards",
+        typewriter: "typewriter 2s steps(70) forwards",
+        caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) forwqards 2s',
       },
       keyframes: {
         typewriter: {
           to: {
-            right: '100%'
+            left: '100%'
           }
-      }
+      },
+      blink: {
+        '0%': {
+          opacity: '0',
+        },
+        '0.1%': {
+          opacity: '1',
+        },
+        '50%': {
+          opacity: '1',
+        },
+        '50.1%': {
+          opacity: '0',
+        },
+        '100%': {
+          opacity: '0',
+        },
+      },
     },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

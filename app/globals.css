@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer utilities {
+  body {
+    font-family: "Uncial Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
   .glass {
 /* From https://css.glass */
     border-radius: 14px;

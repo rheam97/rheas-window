@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Title from "./title";
+import About from "./about/page";
+import Projects from "./projects/page";
 import { Container } from "postcss";
 import React from "react";
 import { useState } from "react";
@@ -35,7 +37,9 @@ import { useState } from "react";
 
 export default function Home() {
   return (
+    <body className="h-screen">
    <Title/>
+   </body>
   );
 }
 
