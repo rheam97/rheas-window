@@ -42,6 +42,7 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero': "url('../public/banner.jpeg')",
+        'menu': "url('../public/menu.png')",
         'rf': "url('../public/restroomfinder.png')",
         'ss': "url('../public/silversocials.png')"
       },

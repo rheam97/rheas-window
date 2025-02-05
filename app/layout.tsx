@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Uncial_Antiqua } from 'next/font/google'
+import { Glass_Antiqua } from 'next/font/google'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
