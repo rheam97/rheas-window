@@ -15,10 +15,10 @@ function Menu() {
           <div className={`hamburger sm:hidden z-50 text-white text-[25px] ${toggle ? `before:content-['x'] bg-none px-4` : `bg-menu bg-cover` }` } onClick={toggler}>
           </div>
           <ul
-            className={`text-white sm:flex ${
+            className={`text-white sm:flex sm:justify-between justify-center items-center w-full px-3 ${
               toggle
-                ? `flex flex-col justify-center w-screen h-screen absolute transition-all transition-discrete ease-in-out delay-150 duration-800 items-center bg-black z-50 backdrop-opacity-100 top-0`
-                : `hidden justify-between items-center w-full px-3`
+                ? `flex flex-col w-screen h-screen absolute transition-all ease-in-out duration-500 delay-150 transform translate-y-0 items-center bg-black/50 z-50 top-0 backdrop-blur`
+                : `hidden md:translate-y-0 -translation-y-full`
             }`}
           >
             <li>

@@ -3,10 +3,21 @@
 @tailwind utilities;
 
 @layer utilities {
-  body {
-    font-family: "Glass Antiqua", serif;
-    font-weight: 400;
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+  }
+
+  body > p {
+    font-family: var(--font-texturina);
+    font-weight: 200;
     font-style: normal;
+  }
+
+  h1, header >nav > li > a {
+    font-family: var(--font-pirata);
+    font-weight: 400;
   }
   .glass {
 /* From https://css.glass */
@@ -37,11 +48,7 @@
   max-width: 100%;
 }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
