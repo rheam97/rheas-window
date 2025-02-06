@@ -10,32 +10,60 @@ const config: Config = {
     
     extend: {
       animation: {
-        typewriter: "typewriter 2s steps(70) forwards",
-        caret: 'typewriter 2s steps(11) forwards, blink 1s steps(11) forwqards 2s',
+        typewriter: "typewriter 2s steps(20) forwards, blink 1.75s steps(20) infinite 2s",
+        caret: 'typewriter 2s steps(20) forwards, blink 1.75s steps(20) infinite 2s',
+        brighten: 'rise 5s ease-in-out'
       },
       keyframes: {
         typewriter: {
           to: {
             left: '100%'
-          }
+          },
+        
       },
       blink: {
         '0%': {
-          opacity: '0',
+          opacity: '1',
+          background: 'white'
         },
         '0.1%': {
-          opacity: '1',
+          opacity: '0'
         },
         '50%': {
           opacity: '1',
+          background: 'white'
         },
         '50.1%': {
-          opacity: '0',
+          opacity: '0'
         },
         '100%': {
-          opacity: '0',
+          opacity: '1',
+          background: 'white'
         },
       },
+      caret : {
+        to: {
+          right: '70%'
+        }
+      },
+      rise: {
+          '0%' : {
+            background: 'black'
+          },
+          '40%' : {
+            background: 'linear-gradient(45deg, black, purple, pink)'
+          },
+          '60%' : {
+            background: 'linear-gradient(90deg, pink, red, orange)',
+            color: 'grey'
+          },
+          '100%' : {
+            background: 'linear-gradient(90deg, orange, yellow, blue)',
+            color: 'black'
+
+          },
+
+      }
     },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
