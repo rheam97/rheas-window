@@ -11,17 +11,13 @@ function Menu() {
   
     return (
       <header className="bg-black flex w-full justify-center sm:sticky relative">
-        <nav className="flex items-center w-full justify-between sm:pb-4 pb-0 text-center bg-black relative">
+        <nav className="flex items-center w-full justify-between sm:pb-4 pb-0 text-center bg-black relative sm:sticky">
           <div className={`hamburger sm:hidden z-50 text-white text-[25px] ${toggle ? `before:content-['x'] bg-none px-4` : `bg-menu bg-cover` }` } onClick={toggler}>
-            {/* /**change to single symbol that transitions */ }
-            {/* <div className="burger"></div>
-            <div className="burger"></div>
-            <div className="burger"></div> */}
           </div>
           <ul
             className={`text-white sm:flex ${
               toggle
-                ? `flex flex-col justify-center w-screen h-screen absolute transition ease-in-out duration-800 items-center bg-black z-50 backdrop-opacity-100 top-0`
+                ? `flex flex-col justify-center w-screen h-screen absolute transition-all transition-discrete ease-in-out delay-150 duration-800 items-center bg-black z-50 backdrop-opacity-100 top-0`
                 : `hidden justify-between items-center w-full px-3`
             }`}
           >
@@ -32,7 +28,7 @@ function Menu() {
               <a href="/projects">PROJECTS</a>
             </li>
             <li>
-              <a href="#blog">BLOG</a>
+              <a href="https://blog.rheam.dev" target="_clear">BLOG</a>
             </li>
             <li>
               <a
